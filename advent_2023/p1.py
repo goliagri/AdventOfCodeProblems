@@ -1,5 +1,5 @@
 #https://adventofcode.com/2023/day/1
-input_path = "advent_data/"
+input_path = "advent_2023_data/"
 def get_calibration_value_pt1(text):
     text = list(filter(lambda x: x.isdigit(), text))
     if not text:
