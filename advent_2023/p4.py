@@ -26,7 +26,7 @@ def copy_scoring_scratchcards(file):
     copies = [1 for _ in range(len(lines))]
     for i, line in enumerate(lines):
         matches = num_matches(line)
-        if matches: #not currently does not handel case where we pass end of file, we assume this wont happen
+        if matches: #currently does not handel case where we copy past end of file, we assume problem is constructed such that this wont happen
             copies[i+1:i+matches+1] = [x+copies[i] for x in copies[i+1:i+matches+1]]
     return sum(copies)
 
