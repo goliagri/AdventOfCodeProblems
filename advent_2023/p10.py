@@ -91,8 +91,7 @@ def loop_len(file, pt):
         adjusted_cur_pos = (cur_pos[0]*2, cur_pos[1]*2)
         in_loop = set()
         in_loop.add(cur_pos[:-1])
-        in_loop.add(start)
-        
+        in_loop.add((start[0]*2, start[1]*2))
         in_loop.add(adjusted_cur_pos[:-1])
         if cur_pos[2] == 1:
             in_loop.add((adjusted_cur_pos[0]-1, adjusted_cur_pos[1]))
