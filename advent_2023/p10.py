@@ -1,4 +1,4 @@
-#https://adventofcode.com/2023/day/8
+#https://adventofcode.com/2023/day/10
 input_path = 'advent_2023_data/'
 
 def infer_next_from_start(grid, start):
